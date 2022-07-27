@@ -33,7 +33,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/baseline_person_24"
+                android:drawableStart="@drawable/outline_person_outline_24"
                 android:drawablePadding="@dimen/_10sdp"
                 android:drawableTint="@color/white"
                 android:hint="Enter Name"
@@ -62,7 +62,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/baseline_mail_24"
+                android:drawableStart="@drawable/outline_mail_outline_24"
                 android:drawablePadding="@dimen/_10sdp"
                 android:drawableTint="@color/white"
                 android:hint="Email"
@@ -76,7 +76,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/baseline_visibility_24"
+                android:drawableStart="@drawable/outline_visibility_24"
                 android:drawablePadding="@dimen/_10sdp"
                 android:drawableTint="@color/white"
                 android:hint="Password"
@@ -89,7 +89,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/baseline_visibility_24"
+                android:drawableStart="@drawable/outline_visibility_24"
                 android:drawablePadding="@dimen/_10sdp"
                 android:drawableTint="@color/white"
                 android:hint="Repeat Password"
