@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
     tools:openDrawer="start">
 
@@ -13,21 +14,75 @@
         android:background="@drawable/img"
         android:fitsSystemWindows="true">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_100sdp"
-            android:background="@drawable/rect_black_right_rounded"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:layout_width="67dp"
-                android:layout_height="@dimen/_80sdp"
-                android:layout_marginTop="@dimen/_10sdp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/rect_black_right_rounded"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_8sdp">
 
-                android:background="@drawable/top_right_rounded_rect"
-                android:src="@drawable/pass_photo" />
-        </LinearLayout>
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageViewCircleWithStroke"
+                        android:layout_width="94dp"
+                        android:layout_height="95dp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pass_photo"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.SelectedCornerCut" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Ramesh Kanuru"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="+91-999 999 ****"
+                            android:textAlignment="center"
+                            android:textColor="@color/light_gray"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10sdp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="dfghrhj" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
 
     </com.google.android.material.navigation.NavigationView>
 
