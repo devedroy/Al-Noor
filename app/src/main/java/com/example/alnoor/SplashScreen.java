@@ -9,35 +9,32 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreen extends AppCompatActivity {
 
+    private static int SPLASH_SCREEN_TIME_OUT = 2000;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_splash);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_splash);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent i=new Intent(MainActivity.this,
+                        SecondActivity.class);
+                //Intent is used to switch from one activity to another.
+
+                startActivity(i);
+                //invoke the SecondActivity.
+
+                finish();
+                //the current activity will get finished.
+            }
+        }, SPLASH_SCREEN_TIME_OUT);
     }
 
-//    userSession =new
-//
-//    UserSession(SplashScreen .this);
-//
-//    Handler handler = new Handler();
-//        handler.postDelayed(new
-//
-//    Runnable() {
-//        @Override
-//        public void run () {
-//            if (userSession.isUserLoggedIn()) {
-//                Intent i11 = new Intent(SplashScreen.this, MainActivity.class);
-//                startActivity(i11);
-//                finish();
-//            } else {
-//                Intent i12 = new Intent(SplashScreen.this, Login_Activity.class);
-//                startActivity(i12);
-//                finish();
-//            }
-//        }
-//    },3000);
+
 }

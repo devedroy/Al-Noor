@@ -24,5 +24,12 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/round_verified_24</item>
+        <item name="postSplashScreenTheme">@style/Theme.AlNoor</item>
+
+    </style>
+
 
 </resources>
