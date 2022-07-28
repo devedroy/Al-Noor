@@ -7,6 +7,7 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class SplashScreen extends AppCompatActivity {
 
     private static int SPLASH_SCREEN_TIME_OUT = 2000;
@@ -23,15 +24,10 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i=new Intent(MainActivity.this,
-                        SecondActivity.class);
-                //Intent is used to switch from one activity to another.
-
+                Intent i = new Intent(SplashScreen.this,
+                        LogSignSelectorActivity.class);
                 startActivity(i);
-                //invoke the SecondActivity.
-
                 finish();
-                //the current activity will get finished.
             }
         }, SPLASH_SCREEN_TIME_OUT);
     }
