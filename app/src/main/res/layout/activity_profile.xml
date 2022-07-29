@@ -67,6 +67,7 @@
 
             <ImageView
                 android:layout_width="wrap_content"
+                android:onClick="btnBack"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_20sdp"
@@ -99,17 +100,21 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/etName"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:background="@null"
                 android:drawableStart="@drawable/outline_person_outline_24"
                 android:drawablePadding="@dimen/_16sdp"
                 android:hint="Name"
+                android:inputType="text"
                 android:padding="@dimen/_16sdp"
                 android:text="Ramesh Kanuru"
                 android:textColor="?attr/colorControlNormal"
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/etPhoneNumber"
+                android:inputType="phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
@@ -123,6 +128,7 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/etMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
@@ -139,6 +145,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:background="@null"
                 android:drawableStart="@drawable/outline_visibility_24"
@@ -156,9 +163,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_16sdp"
                 android:background="@null"
+                android:id="@+id/etAddress"
                 android:drawableStart="@drawable/outline_location_on_24"
                 android:drawablePadding="@dimen/_16sdp"
-                android:hint="Email"
+                android:hint="Address"
                 android:inputType="textMultiLine"
                 android:padding="@dimen/_16sdp"
                 android:singleLine="false"
@@ -167,8 +175,8 @@
                 android:textStyle="bold" />
 
             <TextView
-
                 android:layout_width="match_parent"
+                android:onClick="updateProfile"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_50sdp"

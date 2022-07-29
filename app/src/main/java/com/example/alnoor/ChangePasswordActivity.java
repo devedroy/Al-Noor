@@ -11,34 +11,25 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ChangePasswordActivity extends AppCompatActivity {
 
-    private EditText etName, etPhoneNumber, etMail, etPassword, etAddress;
+    private EditText etNewPassword, etConfirmNewPassword, etOldPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_change_password);
 
         initViews();
-
     }
 
     private void initViews() {
-        etName = (EditText) findViewById(R.id.etName);
-        etPhoneNumber = (EditText) findViewById(R.id.etPhoneNumber);
-        etMail = (EditText) findViewById(R.id.etMail);
-        etPassword = (EditText) findViewById(R.id.etPassword);
-        etAddress = (EditText) findViewById(R.id.etAddress);
-
-        etName.setText("");
-        etPhoneNumber.setText("");
-        etMail.setText("");
-        etPassword.setText("");
-        etAddress.setText("");
+        etNewPassword = findViewById(R.id.etNewPassword);
+        etConfirmNewPassword = findViewById(R.id.etConfirmNewPassword);
+        etOldPassword = findViewById(R.id.etOldPassword);
     }
 
-    public void updateProfile(View view) {
+    public void changePassword(View view) {
         LayoutInflater inflater = getLayoutInflater();
         View view1 = inflater.inflate(R.layout.custom_toast_layout, (ViewGroup) findViewById(R.id.custom_toast_container));
         TextView textView = view1.findViewById(R.id.tvToast);
@@ -48,9 +39,5 @@ public class ProfileActivity extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(view1);
         toast.show();
-    }
-
-    public void btnBack(View view) {
-        onBackPressed();
     }
 }
