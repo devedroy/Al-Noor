@@ -22,6 +22,8 @@ public class ProfileActivity extends AppCompatActivity {
 
         initViews();
 
+
+
     }
 
     private void initViews() {

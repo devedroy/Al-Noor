@@ -4,7 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/my_drawer_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:openDrawer="start"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -18,6 +20,7 @@
             android:background="@color/black">
 
             <ImageView
+                android:id="@+id/menu"
                 android:layout_width="@dimen/_48sdp"
                 android:layout_height="@dimen/_48sdp"
                 android:layout_alignParentStart="true"
@@ -113,6 +116,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
+                        android:id="@+id/llMyProfile"
+                        android:onClick="myProfile"
                         android:paddingTop="@dimen/_10sdp"
                         android:layout_height="wrap_content"
                         android:paddingBottom="@dimen/_10sdp">
@@ -139,6 +144,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/llContactUs"
+                        android:onClick="contactUs"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingTop="@dimen/_10sdp"
@@ -168,6 +175,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:id="@+id/llMyActs"
+                        android:onClick="myActivities"
                         android:orientation="horizontal"
                         android:paddingTop="@dimen/_10sdp"
                         android:paddingBottom="@dimen/_10sdp">
@@ -195,6 +204,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/llPrivacyPolicy"
+                        android:onClick="privacyPolicy"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingTop="@dimen/_10sdp"
