@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/_20sdp"
+            android:onClick="back"
             android:src="@drawable/baseline_arrow_back_36"
             app:tint="@color/light_gray" />
 

@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageView menu;
     DrawerLayout my_drawer_layout;
-    LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy;
+    LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         ll_ContactUs = findViewById(R.id.llContactUs);
         ll_MyActs = findViewById(R.id.llMyActs);
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
-
+        ll_Logout = findViewById(R.id.llLogout);
     }
 
     public void myProfile(View view) {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void contactUs(View view) {
         ll_ContactUs.setBackgroundResource(R.drawable.rect_red);
-        startActivity(new Intent(MainActivity.this, ContactUsFragment.class));
+        startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
     }
 
     public void myActivities(View view) {
@@ -63,6 +63,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void privacyPolicy(View view) {
         ll_PrivacyPolicy.setBackgroundResource(R.drawable.rect_red);
-        startActivity(new Intent(MainActivity.this, PrivicyPolicyFragment.class));
+        startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
+    }
+
+    public void logout(View view) {
+        ll_Logout.setBackgroundResource(R.drawable.rect_red);
+        finish();
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
     }
 }

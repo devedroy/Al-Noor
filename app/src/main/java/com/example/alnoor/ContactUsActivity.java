@@ -5,12 +5,12 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MyActivities extends AppCompatActivity {
+public class ContactUsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_activities);
+        setContentView(R.layout.activity_contact_us);
     }
 
     public void back(View view) {

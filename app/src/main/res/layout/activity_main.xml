@@ -236,6 +236,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
+                        android:id="@+id/llLogout"
+                        android:onClick="logout"
                         android:paddingTop="@dimen/_10sdp"
                         android:paddingBottom="@dimen/_10sdp">
 
@@ -254,7 +256,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:paddingStart="@dimen/_8sdp"
-                            android:text="Privicy Policy"
+                            android:text="Logout"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_16sdp"
                             android:textStyle="bold" />
