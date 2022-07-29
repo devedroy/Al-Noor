@@ -16,6 +16,7 @@
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_person_24.xml" value="0.122" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_phone_24.xml" value="0.1" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_phone_android_24.xml" value="0.122" />
+        <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_shopping_bag_24.xml" value="0.1" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_swap_vert_24.xml" value="0.1" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/baseline_visibility_24.xml" value="0.122" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/drawable/bottom_rounded_black_rect.xml" value="0.146" />
@@ -76,6 +77,7 @@
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/fragment_privicy_policy.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/fragment_volunteer.xml" value="0.287962962962963" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/fragment_volunteered.xml" value="0.2851851851851852" />
+        <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/main_activity_item.xml" value="0.2851851851851852" />
       </map>
     </option>
   </component>
