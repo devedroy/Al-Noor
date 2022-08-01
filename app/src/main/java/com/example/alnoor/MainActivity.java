@@ -9,12 +9,21 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.alnoor.adapter.MainActivityAdapter;
+import com.example.alnoor.data.MyActivityItemData;
+import com.example.alnoor.model.MainActivityItem;
+
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView menu;
     DrawerLayout my_drawer_layout;
     LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
+    RecyclerView rvTabs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
+        MyActivityItemData data = new MyActivityItemData();
+        List<MainActivityItem> myDataSet = data.loadItems();
+        MainActivityAdapter adapter = new MainActivityAdapter(this, myDataSet);
+//        LinearLayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL,false);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
+        rvTabs.setLayoutManager(layoutManager);
+        rvTabs.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
     private void initViews() {
@@ -44,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         ll_MyActs = findViewById(R.id.llMyActs);
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
         ll_Logout = findViewById(R.id.llLogout);
+        rvTabs = findViewById(R.id.rvTabs);
     }
 
     public void myProfile(View view) {
