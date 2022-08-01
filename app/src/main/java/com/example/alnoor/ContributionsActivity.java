@@ -25,24 +25,24 @@ public class ContributionsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 llOneTime.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
+                llMonthly.setBackgroundResource(0);
                 switchFragment(new ContributeFragment());
             }
         });
         llMonthly.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                llOneTime.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
+                llOneTime.setBackgroundResource(0);
+                llMonthly.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
                 switchFragment(new ContributeFragment());
             }
         });
-
     }
 
     private void initViews() {
         llOneTime = (LinearLayout) findViewById(R.id.llOneTime);
         llMonthly = (LinearLayout) findViewById(R.id.llMonthly);
     }
-
 
     private void switchFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
