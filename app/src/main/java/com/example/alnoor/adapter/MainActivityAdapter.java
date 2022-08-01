@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -20,8 +21,6 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
 
     private Context context;
     private List<MainActivityItem> dataset;
-
-
 
     public MainActivityAdapter(Context context, List<MainActivityItem> dataset) {
         this.context = context;
@@ -41,12 +40,20 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
         MainActivityItem item = dataset.get(position);
         holder.tvItemName.setText(item.getItemName());
         holder.ivItemImage.setImageResource(item.getItemImageResource());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "" + holder.tvItemName.getText().toString(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
     public int getItemCount() {
         return dataset.size();
     }
+
 
     public class MyActivityViewHolder extends RecyclerView.ViewHolder {
         ImageView ivItemImage;
