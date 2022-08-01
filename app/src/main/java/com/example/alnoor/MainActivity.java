@@ -3,29 +3,19 @@ package com.example.alnoor;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.alnoor.adapter.MainActivityAdapter;
-import com.example.alnoor.data.MyActivityItemData;
-import com.example.alnoor.model.MainActivityItem;
-
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView menu;
     DrawerLayout my_drawer_layout;
     LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
-    RecyclerView rvTabs;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,32 +34,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        MyActivityItemData data = new MyActivityItemData();
-        List<MainActivityItem> myDataSet = data.loadItems();
-        MainActivityAdapter adapter = new MainActivityAdapter(this, myDataSet);
-//        LinearLayoutManager layoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL,false);
-        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
-        rvTabs.setLayoutManager(layoutManager);
-        rvTabs.setAdapter(adapter);
-        adapter.notifyDataSetChanged();
-
-        rvTabs.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-            @Override
-            public boolean onInterceptTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(@NonNull RecyclerView rv, @NonNull MotionEvent e) {
-
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-
-            }
-        });
-
     }
 
     private void initViews() {
@@ -80,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         ll_MyActs = findViewById(R.id.llMyActs);
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
         ll_Logout = findViewById(R.id.llLogout);
-        rvTabs = findViewById(R.id.rvTabs);
+
     }
 
     public void myProfile(View view) {
@@ -107,5 +71,37 @@ public class MainActivity extends AppCompatActivity {
         ll_Logout.setBackgroundResource(R.drawable.rect_red);
         finish();
         startActivity(new Intent(MainActivity.this, LoginActivity.class));
+    }
+
+    public void contributions(View view) {
+        startActivity(new Intent(this, ContributionsActivity.class));
+    }
+
+    public void beAVolunteer(View view) {
+        startActivity(new Intent(this, VolunteerActivity.class));
+    }
+
+    public void notifications(View view) {
+        startActivity(new Intent(this, NotificationsActivity.class));
+    }
+
+    public void partnerWithUs(View view) {
+        startActivity(new Intent(this, VolunteersActivity.class));
+    }
+
+    public void requestToDonate(View view) {
+        startActivity(new Intent(this, DonationActivity.class));
+    }
+
+    public void stories(View view) {
+        startActivity(new Intent(this, StoriesActivity.class));
+    }
+
+    public void requirements(View view) {
+        startActivity(new Intent(this, RequirementDetailActivity.class));
+    }
+
+    public void appInfo(View view) {
+        startActivity(new Intent(this, AboutActivity.class));
     }
 }

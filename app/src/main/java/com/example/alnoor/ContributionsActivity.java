@@ -52,4 +52,7 @@ public class ContributionsActivity extends AppCompatActivity {
 
     }
 
+    public void back(View view) {
+        onBackPressed();
+    }
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".VolunteerFragment">
+    tools:context=".DonationActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="VOLUNTEER"
+            android:text="DONATE"
             android:textAlignment="center"
             android:textColor="@color/light_gray"
             android:textSize="@dimen/_20sdp" />
@@ -55,71 +55,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="If you want to be partners with us please enter your following details"
+                    android:padding="@dimen/_6sdp"
+                    android:text="If you want to donate please\n enter following details"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_18sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal"
-                    android:paddingTop="@dimen/_20sdp"
-                    android:paddingBottom="@dimen/_20sdp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/rect_rounded_red_stroke"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="@dimen/_8sdp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_fiber_manual_record_24"
-                            app:tint="@color/red" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/_5sdp"
-                            android:layout_weight="1"
-                            android:text="Individual"
-                            android:textColor="@color/red"
-                            android:textSize="@dimen/_16sdp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:padding="@dimen/_8sdp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/baseline_fiber_manual_record_24"
-                            app:tint="@color/black" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="@dimen/_5sdp"
-                            android:layout_weight="1"
-                            android:text="Organisation"
-                            android:textColor="@color/black"
-                            android:textSize="@dimen/_16sdp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-                </LinearLayout>
 
                 <EditText
                     android:layout_width="match_parent"
@@ -142,26 +83,46 @@
                     android:hint="Mobile"
                     android:padding="@dimen/_16sdp" />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:drawableStart="@drawable/outline_location_on_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Address"
-                    android:padding="@dimen/_16sdp" />
 
-                <EditText
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_72sdp"
-                    android:background="@null"
-                    android:drawableStart="@drawable/baseline_mail_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Message"
-                    android:padding="@dimen/_16sdp" />
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_6sdp"
+                    android:text="What do want to donate ?"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_16sdp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:drawableStart="@drawable/outline_fiber_manual_record_24"
+                        android:drawablePadding="@dimen/_16sdp"
+                        android:drawableTint="@color/light_gray"
+                        android:hint="Thing1" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_24sdp"
+                        android:layout_weight="4"
+                        android:src="@drawable/outline_add_box_24"
+                        app:tint="@color/light_gray" />
+                </LinearLayout>
+
 
                 <TextView
                     android:layout_width="match_parent"
