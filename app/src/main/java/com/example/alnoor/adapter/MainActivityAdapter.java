@@ -47,6 +47,7 @@ public class MainActivityAdapter extends RecyclerView.Adapter<MainActivityAdapte
                 Toast.makeText(context, "" + holder.tvItemName.getText().toString(), Toast.LENGTH_SHORT).show();
             }
         });
+
     }
 
     @Override
