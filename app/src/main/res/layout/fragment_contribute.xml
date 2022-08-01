@@ -152,8 +152,8 @@
         android:layout_marginTop="@dimen/_50sdp"
         android:layout_marginEnd="@dimen/_5sdp"
         android:background="@drawable/rect_round_red"
-        android:paddingTop="@dimen/_10sdp"
-        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
         android:text="PAY AMOUNT"
         android:textAlignment="center"
         android:textColor="@color/light_gray" />
