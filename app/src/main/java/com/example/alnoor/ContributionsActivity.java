@@ -50,6 +50,7 @@ public class ContributionsActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_container, fragment);
         fragmentTransaction.commit();
 
+
     }
 
     public void back(View view) {
