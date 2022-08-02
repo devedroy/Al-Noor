@@ -14,6 +14,127 @@ public class NotificationData {
         notificationList.add(new Notification(
                 R.drawable.round_notifications_24,
                 "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur" +
+                        "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
+                "Loren ipsum dolor sit amet, consectetur",
+                R.drawable.outline_alarm_24,
+                "2:00 pm"));
+
+        notificationList.add(new Notification(
+                R.drawable.round_notifications_24,
+                "Valuntter",
                 "Loren ipsum dolor sit amet, consectetur",
                 R.drawable.outline_alarm_24,
                 "2:00 pm"));
