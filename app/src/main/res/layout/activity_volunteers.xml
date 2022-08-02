@@ -71,6 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:id="@+id/ll_Individual"
                         android:background="@drawable/rect_rounded_red_stroke"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -98,7 +99,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-
+                        android:id="@+id/ll_Organisation"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:padding="@dimen/_8sdp">
@@ -121,60 +122,11 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <EditText
+                <FrameLayout
+                    android:id="@+id/frame_container"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_16sdp"
-                    android:background="@null"
-                    android:drawableStart="@drawable/baseline_person_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Name"
-                    android:padding="@dimen/_16sdp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:drawableStart="@drawable/baseline_phone_android_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Mobile"
-                    android:padding="@dimen/_16sdp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@null"
-                    android:drawableStart="@drawable/outline_location_on_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Address"
-                    android:padding="@dimen/_16sdp" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_72sdp"
-                    android:background="@null"
-                    android:drawableStart="@drawable/baseline_mail_24"
-                    android:drawablePadding="@dimen/_16sdp"
-                    android:drawableTint="@color/light_gray"
-                    android:hint="Message"
-                    android:padding="@dimen/_16sdp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_50sdp"
-                    android:background="@drawable/rect_round_red"
-                    android:paddingTop="@dimen/_6sdp"
-                    android:paddingBottom="@dimen/_6sdp"
-                    android:text="SUBMIT"
-                    android:textAlignment="center"
-                    android:textColor="@color/light_gray"
-                    android:textSize="@dimen/_20sdp"
-                    android:textStyle="bold" />
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
