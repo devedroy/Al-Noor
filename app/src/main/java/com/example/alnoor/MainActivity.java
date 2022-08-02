@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout my_drawer_layout;
     LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

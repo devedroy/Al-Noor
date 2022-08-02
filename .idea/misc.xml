@@ -57,6 +57,7 @@
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_contact_us.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_contribute.xml" value="0.287962962962963" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_contributions.xml" value="0.25" />
+        <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_donation.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_donation2.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_forgot_password.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/activity_log_sign_selector.xml" value="0.27685185185185185" />
@@ -92,6 +93,7 @@
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/fragment_volunteered.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/fragment_volunteers_activity.xml" value="0.2851851851851852" />
         <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/main_activity_item.xml" value="0.22" />
+        <entry key="..\:/Users/Guest/AndroidStudioProjects/AlNoor/app/src/main/res/layout/notification.xml" value="0.25" />
       </map>
     </option>
   </component>
