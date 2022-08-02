@@ -148,6 +148,15 @@
         android:textColor="@color/black"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        android:hint="Amount"
+        android:paddingLeft="@dimen/_10sdp" />
+
     <TextView
 
         android:layout_width="match_parent"
