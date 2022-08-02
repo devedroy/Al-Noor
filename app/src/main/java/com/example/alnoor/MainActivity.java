@@ -44,31 +44,61 @@ public class MainActivity extends AppCompatActivity {
         ll_MyActs = findViewById(R.id.llMyActs);
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
         ll_Logout = findViewById(R.id.llLogout);
-
     }
 
     public void myProfile(View view) {
         ll_MyProfile.setBackgroundResource(R.drawable.rect_red);
+
+        ll_ContactUs.setBackgroundResource(0);
+        ll_MyActs.setBackgroundResource(0);
+        ll_PrivacyPolicy.setBackgroundResource(0);
+        ll_Logout.setBackgroundResource(0);
+
         startActivity(new Intent(MainActivity.this, ProfileActivity.class));
     }
 
     public void contactUs(View view) {
         ll_ContactUs.setBackgroundResource(R.drawable.rect_red);
+
+        ll_MyActs.setBackgroundResource(0);
+        ll_PrivacyPolicy.setBackgroundResource(0);
+        ll_Logout.setBackgroundResource(0);
+        ll_MyProfile.setBackgroundResource(0);
+
         startActivity(new Intent(MainActivity.this, ContactUsActivity.class));
+
     }
 
     public void myActivities(View view) {
         ll_MyActs.setBackgroundResource(R.drawable.rect_red);
+
+        ll_PrivacyPolicy.setBackgroundResource(0);
+        ll_Logout.setBackgroundResource(0);
+        ll_MyProfile.setBackgroundResource(0);
+        ll_ContactUs.setBackgroundResource(0);
+
         startActivity(new Intent(MainActivity.this, MyActivities.class));
     }
 
     public void privacyPolicy(View view) {
         ll_PrivacyPolicy.setBackgroundResource(R.drawable.rect_red);
+
+        ll_Logout.setBackgroundResource(0);
+        ll_MyProfile.setBackgroundResource(0);
+        ll_ContactUs.setBackgroundResource(0);
+        ll_MyActs.setBackgroundResource(0);
+
         startActivity(new Intent(MainActivity.this, PrivacyPolicyActivity.class));
     }
 
     public void logout(View view) {
         ll_Logout.setBackgroundResource(R.drawable.rect_red);
+
+        ll_MyProfile.setBackgroundResource(0);
+        ll_ContactUs.setBackgroundResource(0);
+        ll_MyActs.setBackgroundResource(0);
+        ll_PrivacyPolicy.setBackgroundResource(0);
+
         finish();
         startActivity(new Intent(MainActivity.this, LoginActivity.class));
     }
