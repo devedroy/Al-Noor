@@ -53,4 +53,8 @@ public class VolunteersActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_container, fragment);
         fragmentTransaction.commit();
     }
+
+    public void backVolunteers(View view) {
+        onBackPressed();
+    }
 }
