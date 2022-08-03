@@ -58,8 +58,11 @@
                     android:inputType="phone"
                     android:textColorHint="@color/light_gray"
                     android:padding="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
                     android:textColor="@color/light_gray"
                     android:textSize="@dimen/_15sdp" />
+
+
 
                 <EditText
                     android:layout_width="match_parent"
