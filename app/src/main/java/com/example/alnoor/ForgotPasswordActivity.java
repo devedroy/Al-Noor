@@ -1,5 +1,6 @@
 package com.example.alnoor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -38,5 +39,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         toast.setDuration(Toast.LENGTH_LONG);
         toast.setView(view1);
         toast.show();
+
+        startActivity(new Intent(this, LoginActivity.class));
     }
 }
