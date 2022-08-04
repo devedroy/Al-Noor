@@ -1,4 +1,4 @@
-package com.example.alnoor.adapter;
+package com.example.alnoor.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.alnoor.R;
-import com.example.alnoor.model.Story;
+import com.example.alnoor.models.Story;
 
 import java.util.List;
 

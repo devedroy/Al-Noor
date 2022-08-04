@@ -1,7 +1,7 @@
 package com.example.alnoor.data;
 
 import com.example.alnoor.R;
-import com.example.alnoor.model.Notification;
+import com.example.alnoor.models.Notification;
 
 import java.util.ArrayList;
 import java.util.List;
