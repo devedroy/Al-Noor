@@ -12,7 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.alnoor.ui.fragment.ContributeFragment;
+import com.example.alnoor.ui.fragment.MonthlyContributionFragment;
+import com.example.alnoor.ui.fragment.OneTimeContributionFragment;
 
 public class ContributionsActivity extends AppCompatActivity {
 
@@ -39,7 +40,7 @@ public class ContributionsActivity extends AppCompatActivity {
                 llMonthly.setBackgroundResource(0);
                 tvMonthly.setTextColor(Color.BLACK);
                 ivMonthly.setColorFilter(Color.BLACK);
-                switchFragment(new ContributeFragment());
+                switchFragment(new OneTimeContributionFragment());
             }
         });
         llMonthly.setOnClickListener(new View.OnClickListener() {
@@ -52,7 +53,7 @@ public class ContributionsActivity extends AppCompatActivity {
                 llOneTime.setBackgroundResource(0);
                 tvOneTime.setTextColor(Color.BLACK);
                 ivOneTime.setColorFilter(Color.BLACK);
-                switchFragment(new ContributeFragment());
+                switchFragment(new MonthlyContributionFragment());
             }
         });
     }
@@ -72,7 +73,6 @@ public class ContributionsActivity extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.frame_container, fragment);
         fragmentTransaction.commit();
-
 
     }
 

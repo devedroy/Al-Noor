@@ -13,10 +13,10 @@ import com.example.alnoor.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ContributeFragment#newInstance} factory method to
+ * Use the {@link OneTimeContributionFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ContributeFragment extends Fragment {
+public class OneTimeContributionFragment extends Fragment {
 
     private TextView t1, t2, t3, t4;
 
@@ -29,7 +29,7 @@ public class ContributeFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ContributeFragment() {
+    public OneTimeContributionFragment() {
         // Required empty public constructor
     }
 
@@ -42,8 +42,8 @@ public class ContributeFragment extends Fragment {
      * @return A new instance of fragment ContributeFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ContributeFragment newInstance(String param1, String param2) {
-        ContributeFragment fragment = new ContributeFragment();
+    public static OneTimeContributionFragment newInstance(String param1, String param2) {
+        OneTimeContributionFragment fragment = new OneTimeContributionFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -64,7 +64,7 @@ public class ContributeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_contribute, container, false);
+        View view = inflater.inflate(R.layout.fragment_contribute_one_time, container, false);
 
         initViews(view);
 
