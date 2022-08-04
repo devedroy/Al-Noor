@@ -1,4 +1,4 @@
-package com.example.alnoor.model;
+package com.example.alnoor.models;
 
 public class Notification {
     int logoResourceId;

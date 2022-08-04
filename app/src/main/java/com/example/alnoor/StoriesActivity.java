@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.alnoor.adapter.StoryAdapter;
+import com.example.alnoor.adapters.StoryAdapter;
 import com.example.alnoor.data.StoryData;
 
 public class StoriesActivity extends AppCompatActivity {

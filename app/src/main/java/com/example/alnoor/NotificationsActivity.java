@@ -7,9 +7,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.alnoor.adapter.NotificationAdapter;
+import com.example.alnoor.adapters.NotificationAdapter;
 import com.example.alnoor.data.NotificationData;
-import com.example.alnoor.model.Notification;
+import com.example.alnoor.models.Notification;
 
 import java.util.List;
 
