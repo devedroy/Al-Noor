@@ -1,12 +1,13 @@
 package com.example.alnoor.ui.fragment;
 
+import android.graphics.Color;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.fragment.app.Fragment;
 
 import com.example.alnoor.R;
 
@@ -16,6 +17,8 @@ import com.example.alnoor.R;
  * create an instance of this fragment.
  */
 public class MonthlyContributionFragment extends Fragment {
+
+    private TextView t1, t2, t3, t4;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -61,6 +64,89 @@ public class MonthlyContributionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_monthly_contribution, container, false);
+        View view = inflater.inflate(R.layout.fragment_monthly_contribution, container, false);
+
+        initViews(view);
+
+        t1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                t1.setBackgroundResource(R.drawable.rect_rounded_black);
+                t1.setTextColor(Color.WHITE);
+
+                t2.setBackgroundResource(0);
+                t3.setBackgroundResource(0);
+                t4.setBackgroundResource(0);
+
+                t2.setTextColor(Color.BLACK);
+                t3.setTextColor(Color.BLACK);
+                t4.setTextColor(Color.BLACK);
+
+            }
+        });
+
+        t2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                t2.setBackgroundResource(R.drawable.rect_rounded_black);
+                t2.setTextColor(Color.WHITE);
+
+                t1.setBackgroundResource(0);
+                t3.setBackgroundResource(0);
+                t4.setBackgroundResource(0);
+
+                t1.setTextColor(Color.BLACK);
+                t3.setTextColor(Color.BLACK);
+                t4.setTextColor(Color.BLACK);
+
+            }
+        });
+
+        t3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                t3.setBackgroundResource(R.drawable.rect_rounded_black);
+                t3.setTextColor(Color.WHITE);
+
+                t2.setBackgroundResource(0);
+                t1.setBackgroundResource(0);
+                t4.setBackgroundResource(0);
+
+                t2.setTextColor(Color.BLACK);
+                t1.setTextColor(Color.BLACK);
+                t4.setTextColor(Color.BLACK);
+
+            }
+        });
+
+        t4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                t4.setBackgroundResource(R.drawable.rect_rounded_black);
+                t4.setTextColor(Color.WHITE);
+
+                t2.setBackgroundResource(0);
+                t3.setBackgroundResource(0);
+                t1.setBackgroundResource(0);
+
+                t2.setTextColor(Color.BLACK);
+                t3.setTextColor(Color.BLACK);
+                t1.setTextColor(Color.BLACK);
+
+            }
+        });
+
+        return view;
+    }
+
+    private void initViews(View view) {
+        t1 = view.findViewById(R.id.t1);
+        t2 = view.findViewById(R.id.t2);
+        t3 = view.findViewById(R.id.t3);
+        t4 = view.findViewById(R.id.t4);
     }
 }
