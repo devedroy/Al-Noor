@@ -12,10 +12,10 @@ import com.example.alnoor.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link VolunteersFragment#newInstance} factory method to
+ * Use the {@link VolunteerOrganizationFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class VolunteersFragment extends Fragment {
+public class VolunteerOrganizationFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class VolunteersFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public VolunteersFragment() {
+    public VolunteerOrganizationFragment() {
         // Required empty public constructor
     }
 
@@ -39,8 +39,8 @@ public class VolunteersFragment extends Fragment {
      * @return A new instance of fragment VolunteersFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static VolunteersFragment newInstance(String param1, String param2) {
-        VolunteersFragment fragment = new VolunteersFragment();
+    public static VolunteerOrganizationFragment newInstance(String param1, String param2) {
+        VolunteerOrganizationFragment fragment = new VolunteerOrganizationFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class VolunteersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_volunteers, container, false);
+        return inflater.inflate(R.layout.fragment_volunteers_organizartion, container, false);
     }
 }

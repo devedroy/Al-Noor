@@ -9,7 +9,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.alnoor.ui.fragment.VolunteersFragment;
+import com.example.alnoor.ui.fragment.VolunteerIndividualFragment;
+import com.example.alnoor.ui.fragment.VolunteerOrganizationFragment;
 
 public class VolunteersActivity extends AppCompatActivity {
 
@@ -27,7 +28,7 @@ public class VolunteersActivity extends AppCompatActivity {
             public void onClick(View view) {
                 ll_Individual.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
                 ll_Organisation.setBackgroundResource(0);
-                switchFragment(new VolunteersFragment());
+                switchFragment(new VolunteerIndividualFragment());
             }
         });
 
@@ -36,7 +37,7 @@ public class VolunteersActivity extends AppCompatActivity {
             public void onClick(View view) {
                 ll_Organisation.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
                 ll_Individual.setBackgroundResource(0);
-                switchFragment(new VolunteersFragment());
+                switchFragment(new VolunteerOrganizationFragment());
             }
         });
     }
