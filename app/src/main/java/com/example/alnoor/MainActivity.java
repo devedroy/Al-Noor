@@ -9,12 +9,18 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.example.alnoor.adapters.BannerAdapter;
+import com.example.alnoor.data.BannerData;
 
 public class MainActivity extends AppCompatActivity {
 
     ImageView menu;
     DrawerLayout my_drawer_layout;
     LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
+
+    ViewPager2 vpBanners;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        BannerData data = new BannerData();
+        BannerAdapter adapter = new BannerAdapter(this, data.loadBannerList());
+        vpBanners.setAdapter(adapter);
     }
 
     private void initViews() {
@@ -43,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         ll_MyActs = findViewById(R.id.llMyActs);
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
         ll_Logout = findViewById(R.id.llLogout);
+        vpBanners = findViewById(R.id.vpBanners);
     }
 
     public void myProfile(View view) {

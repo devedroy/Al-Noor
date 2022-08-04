@@ -14,11 +14,19 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <RelativeLayout
             android:id="@+id/banners"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_250sdp"
-            android:background="@color/black" />
+            android:background="@color/black">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpBanners"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_60sdp" />
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
