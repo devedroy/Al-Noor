@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/_20sdp"
-            android:onClick="back"
+            android:onClick="backMyActivities"
             android:src="@drawable/baseline_arrow_back_36"
             app:tint="@color/light_gray" />
 
@@ -36,6 +36,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
+        android:onClick="myContributions"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="@dimen/_20sdp">
@@ -69,6 +70,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:onClick="Volunteered"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
