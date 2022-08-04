@@ -1,5 +1,6 @@
 package com.example.alnoor;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,7 +14,15 @@ public class MyActivities extends AppCompatActivity {
         setContentView(R.layout.activity_my_activities);
     }
 
-    public void back(View view) {
+    public void backMyActivities(View view) {
         onBackPressed();
+    }
+
+    public void myContributions(View view) {
+        startActivity(new Intent(this, MyContributionActivity.class));
+    }
+
+    public void Volunteered(View view) {
+        startActivity(new Intent(this, VolunteeredActivity.class));
     }
 }

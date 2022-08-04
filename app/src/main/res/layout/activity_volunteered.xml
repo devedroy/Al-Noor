@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".VolunteeredFragment">
+    tools:context=".VolunteeredActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginStart="@dimen/_20sdp"
+            android:onClick="backVolunteered"
             android:src="@drawable/baseline_arrow_back_36"
             app:tint="@color/light_gray" />
 
@@ -64,7 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:text="Lorem ipsum dolor"
+                    android:text="$200 Contribution"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -137,7 +138,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:text="Lorem ipsum dolor"
+                    android:text="Thing1, Thing2,Thing3"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -178,5 +179,4 @@
 
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
