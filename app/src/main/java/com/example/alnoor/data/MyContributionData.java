@@ -9,13 +9,13 @@ public class MyContributionData {
 
     private List<MyContribution> myContributionList = new ArrayList<>();
 
-    public List<MyContribution> loadVolunteeredList() {
+    public List<MyContribution> loadMyContributionList() {
         myContributionList.add(new MyContribution(
                 1,
-                "Loren ipsum dolor",
+                "$200 Contribution",
                 "Loren ipsum dolor sit amet, consectetur",
                 "24-03-2000",
-                "Monthly"));
+                "Thing"));
 
         return myContributionList;
     }
