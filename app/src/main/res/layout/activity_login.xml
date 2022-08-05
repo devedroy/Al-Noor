@@ -14,6 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="btnBack"
+        android:padding="@dimen/btn_back_padding"
         android:layout_marginStart="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:src="@drawable/baseline_arrow_back_36"
@@ -35,9 +36,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="Login"
+                android:padding="@dimen/btn_back_padding"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_18sdp"
+                android:textSize="@dimen/heading_txt_size"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -93,13 +95,14 @@
                     android:text="Login"
                     android:textAlignment="center"
                     android:textColor="@color/light_gray"
-                    android:textSize="@dimen/_20sdp" />
+                    android:textSize="@dimen/tv_btn_txt_size" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
                     android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/btn_back_padding"
                     android:src="@drawable/baseline_arrow_forward_36"
                     app:tint="@color/light_gray" />
 
@@ -117,9 +120,10 @@
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:onClick="forgotPassword"
+                    android:textSize="@dimen/footer_txt_size"
                     android:text="Forgot Password?"
                     android:textColor="@color/light_gray"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -129,7 +133,8 @@
                     android:onClick="Register"
                     android:text="New User?"
                     android:textColor="@color/light_gray"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="@dimen/footer_txt_size"
+                    android:textStyle="bold" />
             </RelativeLayout>
         </LinearLayout>
     </ScrollView>
