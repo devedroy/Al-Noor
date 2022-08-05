@@ -14,6 +14,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.example.alnoor.adapters.BannerAdapter;
 import com.example.alnoor.data.BannerData;
 
+import me.relex.circleindicator.CircleIndicator3;
+
 public class MainActivity extends AppCompatActivity {
 
     ImageView menu;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout ll_MyProfile, ll_ContactUs, ll_MyActs, ll_PrivacyPolicy, ll_Logout;
 
     ViewPager2 vpBanners;
+    CircleIndicator3 tlIndicator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         BannerData data = new BannerData();
         BannerAdapter adapter = new BannerAdapter(this, data.loadBannerList());
         vpBanners.setAdapter(adapter);
+        tlIndicator.setViewPager(vpBanners);
     }
 
     private void initViews() {
@@ -54,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
         ll_PrivacyPolicy = findViewById(R.id.llPrivacyPolicy);
         ll_Logout = findViewById(R.id.llLogout);
         vpBanners = findViewById(R.id.vpBanners);
+        tlIndicator = findViewById(R.id.tlIndicator);
     }
 
     public void myProfile(View view) {

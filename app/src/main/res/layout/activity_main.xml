@@ -15,18 +15,25 @@
         android:orientation="vertical">
 
 
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/banners"
+            android:gravity="center"
             android:layout_width="match_parent"
+            android:orientation="vertical"
             android:layout_height="@dimen/_250sdp"
             android:background="@color/black">
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vpBanners"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/_150sdp"
                 android:layout_marginTop="@dimen/_60sdp" />
-        </RelativeLayout>
+
+            <me.relex.circleindicator.CircleIndicator3
+                android:id="@+id/tlIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
