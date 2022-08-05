@@ -37,7 +37,7 @@
                 android:text="Login"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_30sdp"
+                android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -59,7 +59,7 @@
                     android:textColorHint="@color/light_gray"
                     android:padding="@dimen/_15sdp"
                     android:textColor="@color/light_gray"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="@dimen/_14sdp" />
 
                 <EditText
                     android:layout_width="match_parent"
@@ -73,7 +73,7 @@
                     android:padding="@dimen/_15sdp"
                     android:textColor="@color/light_gray"
                     android:textColorHint="@color/light_gray"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="@dimen/_14sdp" />
             </LinearLayout>
 
             <RelativeLayout
