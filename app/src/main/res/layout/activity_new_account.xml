@@ -12,6 +12,7 @@
         android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="@dimen/btn_back_padding"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:onClick="btnBack"
@@ -38,7 +39,7 @@
                 android:paddingLeft="@dimen/_15sdp"
                 android:text="New Account"
                 android:textColor="@color/light_gray"
-                android:textSize="@dimen/_32sdp"
+                android:textSize="@dimen/heading_txt_size"
                 android:textStyle="bold" />
 
             <EditText
@@ -55,7 +56,7 @@
                 android:text="Abdur Rehman"
                 android:textColor="@color/light_gray"
                 android:textColorHint="@color/light_gray"
-                android:textSize="@dimen/_15sdp" />
+                android:textSize="@dimen/_12sdp" />
 
             <EditText
                 android:layout_width="match_parent"
@@ -122,20 +123,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
                     android:layout_marginStart="@dimen/_70sdp"
                     android:padding="@dimen/_10sdp"
                     android:text="Register"
-                    android:layout_centerInParent="true"
                     android:textAlignment="center"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_20sdp" />
+                    android:textSize="@dimen/tv_btn_txt_size" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="@dimen/_10sdp"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
+                    android:padding="@dimen/btn_back_padding"
                     android:src="@drawable/baseline_arrow_forward_36"
                     app:tint="@color/white" />
             </RelativeLayout>
@@ -152,16 +153,17 @@
                     android:layout_height="wrap_content"
                     android:text="Already Registered?"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="@dimen/footer_txt_size" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="@dimen/_5sdp"
                     android:text="Login"
+                    android:textStyle="bold"
                     android:onClick="login"
                     android:textColor="@color/red"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="@dimen/footer_txt_size" />
             </LinearLayout>
 
         </LinearLayout>
