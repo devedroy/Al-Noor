@@ -43,6 +43,22 @@ public class ContributionsActivity extends AppCompatActivity {
                 switchFragment(new OneTimeContributionFragment());
             }
         });
+
+
+        MonthlyContributionFragment fragment = new MonthlyContributionFragment();
+        llMonthly.setBackground(getDrawable(R.drawable.rect_rounded_red_stroke));
+        tvMonthly.setTextColor(Color.RED);
+        ivMonthly.setColorFilter(Color.RED);
+
+        llOneTime.setBackgroundResource(0);
+        tvOneTime.setTextColor(Color.BLACK);
+        ivOneTime.setColorFilter(Color.BLACK);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.frame_container, fragment);
+        fragmentTransaction.commit();
+
         llMonthly.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
