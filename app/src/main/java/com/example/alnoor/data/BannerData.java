@@ -10,10 +10,10 @@ public class BannerData {
     private List<Banner> bannerList = new ArrayList<>();
 
     public List<Banner> loadBannerList() {
-        bannerList.add(new Banner(R.drawable.pass_photo));
-        bannerList.add(new Banner(R.drawable.pass_photo));
-        bannerList.add(new Banner(R.drawable.pass_photo));
-        bannerList.add(new Banner(R.drawable.pass_photo));
+        bannerList.add(new Banner(R.drawable.education_banner));
+        bannerList.add(new Banner(R.drawable.education_banner));
+        bannerList.add(new Banner(R.drawable.education_banner));
+        bannerList.add(new Banner(R.drawable.education_banner));
         return bannerList;
     }
 
