@@ -41,7 +41,7 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.ivClock.setImageResource(notifications.get(position).getClockResourceId());
         holder.ivLogo.setImageResource(notifications.get(position).getLogoResourceId());
 
-        holder.tvDescription.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 holder.tvDescription.setMaxLines(50);
