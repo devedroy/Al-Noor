@@ -13,7 +13,6 @@ public class BannerData {
         bannerList.add(new Banner(R.drawable.education_banner));
         bannerList.add(new Banner(R.drawable.education_banner));
         bannerList.add(new Banner(R.drawable.education_banner));
-        bannerList.add(new Banner(R.drawable.education_banner));
         return bannerList;
     }
 
