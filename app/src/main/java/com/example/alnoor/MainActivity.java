@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
         BannerData data = new BannerData();
         BannerAdapter adapter = new BannerAdapter(this, data.loadBannerList());
         vpBanners.setAdapter(adapter);
+        vpBanners.setClipToPadding(false);
+        vpBanners.setPadding(48, 0, 48, 0);
+        vpBanners.setOffscreenPageLimit(1);
         tlIndicator.setViewPager(vpBanners);
     }
 
