@@ -1,6 +1,7 @@
 package com.example.alnoor.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +43,14 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
         holder.ivLogo.setImageResource(notifications.get(position).getLogoResourceId());
 
         final boolean[] clickFlag = {true};
+
+        if (position % 2 != 0) {
+            holder.itemView.setBackgroundColor(Color.BLACK);
+            holder.tvSubject.setTextColor(Color.WHITE);
+            holder.tvDescription.setTextColor(Color.WHITE);
+            holder.tvNotificationTime.setTextColor(Color.WHITE);
+            holder.ivClock.setColorFilter(Color.WHITE);
+        }
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
