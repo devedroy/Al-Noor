@@ -23,6 +23,12 @@ public class VolunteersActivity extends AppCompatActivity {
 
         initViews();
 
+        Fragment volFrag = new VolunteerIndividualFragment();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.frame_container, volFrag);
+        fragmentTransaction.commit();
+
         ll_Individual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
